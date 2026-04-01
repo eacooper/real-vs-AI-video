@@ -8,3 +8,5 @@ Participant_ID: unique identifier for each repondent
 Column: ???
 
 Model_code: ???
+
+The Matlab script called "run_analyses" can be used to reproduce all tables and figures
