@@ -12,7 +12,7 @@ The video used in this study can be found at XXX
 # Response data
 Response data are contained in data.csv. Columns are as follows:
 
-participant_id: Unique identifier for each respondent; in this notebook it comes from `ResponseId`
+participant_id: Unique identifier for each respondent
 
 column: Original raw trial column name from the wide Qualtrics CSV such as `RF_1_Apple_0`
 
@@ -42,11 +42,11 @@ confidence:	Numeric confidence value parsed from `confidence_raw` on a `0` to `3
 
 is_correct_numeric:	Numeric version of correctness used for analysis: `1.0` for correct and `0.0` for incorrect
 
-Participant age carried over from `Demo 2`
+age: Participant age in years
 
-gender:	Participant gender carried over from `Demo 3`
+gender:	Participant gender
 
-device_type:	Participant device type carried over from `Demo 4 `
+device_type: Participant device type
 
 is_mobile:	Boolean indicator derived from `device_type` for whether the device was mobile
 
