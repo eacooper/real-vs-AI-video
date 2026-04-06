@@ -41,7 +41,8 @@ confidence_raw:	Raw confidence response from the matching `CR_...` column
 confidence:	Numeric confidence value parsed from `confidence_raw` on a `0` to `3` scale
 
 is_correct_numeric:	Numeric version of correctness used for analysis: `1.0` for correct and `0.0` for incorrect
-age	Participant age carried over from `Demo 2`
+
+Participant age carried over from `Demo 2`
 
 gender:	Participant gender carried over from `Demo 3`
 
