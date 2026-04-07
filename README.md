@@ -7,6 +7,8 @@ C. Davodi, S. Barrington, H. Farid and E. A. Cooper
 
 APAI Workshop at CVPR, 2026
 
+Please cite this manuscript if you use the associated data.
+
 The videos used in this study can be found at XXX
 
 # Response data
@@ -35,4 +37,4 @@ Response data are contained in data.csv. Columns are as follows:
 | `is_mobile` | Boolean indicator derived from `device_type` for whether the device was mobile |
 
 # Analysis code
-The Matlab script called "run_analyses" can be used to reproduce all tables and figures
+The Matlab script called "run_analyses" can be used to reproduce all tables and figures. This script optionally calls "fit_model" to run the logistic regression models reported in the paper. All analyses were performed in Matlab 2025b, and require the Statistics and Machine Learning Toolbox and the Text Analytics Toolbox.
