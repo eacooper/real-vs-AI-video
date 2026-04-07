@@ -9,7 +9,7 @@ APAI Workshop at CVPR, 2026
 
 Please cite this manuscript if you use the associated data.
 
-The videos used in this study can be found at XXX
+The videos used in this study can be found at https://doi.org/10.5281/zenodo.19463141
 
 # Response data
 Response data are contained in data.csv. Columns are as follows:
