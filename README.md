@@ -19,7 +19,7 @@ Response data are contained in data.csv. Columns are as follows:
 | `participant_id` | Unique identifier for each respondent |
 | `column` | Original raw trial column name from the wide Qualtrics CSV such as `RF_1_Apple_0` |
 | `question_type` | Question family parsed from the raw column name; here `RF` means the real-vs-AI judgment item |
-| `model_code` | Coded model identity parsed from the raw column name: `Apple`, `Banana`, `Pear`, or `Kiwi` |
+| `model_code` | Coded model identity parsed from the raw column name: `Apple` = `Bytedance`, `Banana` = `Real`, `Pear` = `Sora`, or `Kiwi` = `Veo`|
 | `model_label` | Human-readable model name mapped from `model_code` |
 | `is_real` | Boolean indicating whether the stimulus is truly real content |
 | `duration_code` | Coded duration parsed from the raw column name: `0`, `1`, `2`, `3`, or `4` |
@@ -35,6 +35,14 @@ Response data are contained in data.csv. Columns are as follows:
 | `gender` | Participant gender |
 | `device_type` | Participant device type |
 | `is_mobile` | Boolean indicator derived from `device_type` for whether the device was mobile |
+| `time_taken` | Time taken to complete the survey in seconds |
+| `Strat 1` | Overall decision strategy |
+| `Strat 2` | Specific features/cues attended to |
+| `Strat 3` | Cues used when confidence was especially high for AI judgments |
+
+Each row in the filtered analysis dataset represents a single participant-trial observation. Trial-level variables such as `stimulus`, `model_code`, `duration_label`, `response`, and `confidence` vary across rows within a participant. Participant-level variables such as `age`, `gender`, `device_type`, and `time_taken` are global to the respondent and therefore repeat across all rows for that participant. Likewise, the open-ended `Strat 1`, `Strat 2`, and `Strat 3` responses are survey-level variables: they are provided once per participant for the overall survey, not once per stimulus.
+
+Note that duration refers to the presentation duration of an individual stimulus (0s, 2s, 4s, 6s, 8s), whereas survey Duration (in seconds) refers to the participant’s total time spent completing the full survey.
 
 # Analysis code
 The Matlab script called "run_analyses" can be used to reproduce all tables and figures. This script optionally calls "fit_model" to run the logistic regression models reported in the paper. All analyses were performed in Matlab 2025b, and require the Statistics and Machine Learning Toolbox and the Text Analytics Toolbox.
