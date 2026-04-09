@@ -5,7 +5,7 @@ T = readtable('data.csv');
 
 %% Flags for running stats and saving figures
 saveFigs = 1;
-runStats = 1;
+runStats = 0;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Fit logistic models if requested
