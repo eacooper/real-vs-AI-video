@@ -35,7 +35,7 @@ Response data are contained in data.csv. Columns are as follows:
 | `gender` | Participant gender |
 | `device_type` | Participant device type |
 | `is_mobile` | Boolean indicator derived from `device_type` for whether the device was mobile |
-| `time_taken` | Time taken to complete the survey in seconds |
+| `time_taken` | Time taken to complete the survey in minutes |
 | `Strat 1` | Overall decision strategy |
 | `Strat 2` | Specific features/cues attended to |
 | `Strat 3` | Cues used when confidence was especially high for AI judgments |
